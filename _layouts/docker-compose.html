@@ -31,9 +31,7 @@ layout: compress
         {{ content }}
 
         {% for file in site.static_files %}
-          {% if file.path contains '_includes/docker-compose' %}
-            <a href="{{ file.path }}">{{ file.name | remove: '.yml'}}</a>
-          {% endif %}
+          <a href="{{ file.path }}">{{ file.basename }}</a>
         {% endfor %}
 
         {% include footer.html %}
