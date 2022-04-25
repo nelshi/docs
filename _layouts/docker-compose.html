@@ -6,19 +6,9 @@ layout: page
 <div id="archives" class="pl-xl-2">
 
 {% for file in site.static_files %}
-  <a href="{{ file.path }}">{{ file.basename }}</a>
-{% endfor %}
-
-{% for file in site.includes %}
-  <a href="{{ file.path }}">{{ file.basename }}</a>
-{% endfor %}
-
-{% for file in site.data %}
-  <a href="{{ file.path }}">{{ file.basename }}</a>
-{% endfor %}
-
-{% for file in "/_includes/docker-compose" %}
-  <a href="{{ file.path }}">{{ file.basename }}</a>
+  {% if file.path contains '_includes/docker-compose' %}
+    <a href="{{ file.path }}">{{ file.basename }}</a>
+  {% endif %}
 {% endfor %}
 
 </div>
