@@ -135,7 +135,7 @@ CMD ["vigor-to-prom.py"]
 
 `vigor-to-prom.py`
 
-```ps
+```py
 {% include /python/vigor-to-prom.py %}
 ```
 
