@@ -74,7 +74,7 @@ The remote prometheus call to `/metrics`, fires off the telnet request, so this 
 [Template Text Parser](https://ttp.readthedocs.io/en/latest/) (to parse the stats)
 [Prometheus Python Client](https://github.com/prometheus/client_python) (to make them available to Prometheus)
 
-# Prometheus
+## Prometheus
 
 Set as a target as normal.
 
@@ -90,7 +90,7 @@ Set as a target as normal.
     - 192.168.0.1:8003
 ```
 
-# Dockerfile and Script
+## Dockerfile and Script
 
 `dockerfile`
 
