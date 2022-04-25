@@ -7,29 +7,29 @@ tags: edgerouter dns static hostname #Space Separated
 ---
 # Static Host Mappings on EdgeRouter-X
 
-```
-$ configure
-# show system static-host-mapping
-# exit
-```
-
-To add a static host mapping and an alias:
-
-```
-$ configure
-# set system static-host-mapping host-name pi.hole inet 192.168.1.8
-# set system static-host-mapping host-name pi.hole alias pihole
-# commit
-# save
-# exit
+```sh
+configure
+show system static-host-mapping
+exit
 ```
 
-To remove static mapping and all aliases:
+## Adding a Mapping with Alias:
 
+```sh
+configure
+set system static-host-mapping host-name pi.hole inet 192.168.1.8
+set system static-host-mapping host-name pi.hole alias pihole
+commit
+save
+exit
 ```
-$ configure
-# delete system static-host-mapping host-name pi.hole
-# commit
-# save
-# exit
+
+## Removing Mapping with Aliases:
+
+```sh
+configure
+delete system static-host-mapping host-name pi.hole
+commit
+save
+exit
 ```
