@@ -17,4 +17,8 @@ layout: page
   <a href="{{ file.path }}">{{ file.basename }}</a>
 {% endfor %}
 
+{% for file in "/_includes/docker-compose" %}
+  <a href="{{ file.path }}">{{ file.basename }}</a>
+{% endfor %}
+
 </div>
