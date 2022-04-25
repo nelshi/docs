@@ -2,7 +2,7 @@
 layout: post
 title: "VoIP Softphone Firewall Script"
 date: 2019-03-01 09:00:00 +0000
-categories: rmm script #Space Separated
+categories: script #Space Separated
 tags: script rmm voip firewall #Space Separated
 ---
 

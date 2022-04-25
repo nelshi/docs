@@ -2,7 +2,7 @@
 layout: post
 title: "UISP Docker Container"
 date: 2022-04-22 09:00:00 +0000
-categories: docker unifi #Space Separated
+categories: docker #Space Separated
 tags: docker unifi uisp edgerouter #Space Separated
 ---
 

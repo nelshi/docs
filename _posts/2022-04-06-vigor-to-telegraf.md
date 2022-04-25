@@ -2,7 +2,7 @@
 layout: post
 title: "Vigor to Telegraf"
 date: 2022-04-06 09:00:00 +0000
-categories: docker python modem draytek #Space Separated
+categories: docker #Space Separated
 tags: docker python vigor modem draytek telegraf #Space Separated
 ---
 

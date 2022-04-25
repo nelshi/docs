@@ -2,7 +2,7 @@
 layout: post
 title: "Powershell Hostfile Replacement"
 date: 2019-02-25 09:00:00 +0000
-categories: rmm script #Space Separated
+categories: script #Space Separated
 tags: rmm script powershell hostfile #Space Separated
 ---
 

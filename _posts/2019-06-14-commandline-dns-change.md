@@ -2,7 +2,7 @@
 layout: post
 title: "Commandline DNS Change"
 date: 2019-06-14 09:00:00 +0000
-categories: rmm script #Space Separated
+categories: script #Space Separated
 tags: rmm script cmd dns ip netsh #Space Separated
 ---
 

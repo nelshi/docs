@@ -2,7 +2,7 @@
 layout: post
 title: "Vigor Modem to Prometheus"
 date: 2022-04-07 09:00:00 +0000
-categories: docker python modem draytek #Space Separated
+categories: docker #Space Separated
 tags: docker python vigor modem draytek prometheus #Space Separated
 ---
 

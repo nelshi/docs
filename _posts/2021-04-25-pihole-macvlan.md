@@ -2,7 +2,7 @@
 layout: post
 title: "PiHole MACVLAN Network Creation"
 date: 2021-04-25 09:00:00 +0000
-categories: pi docker #Space Separated
+categories: pi #Space Separated
 tags: pi pihole macvlan bridge network docker #Space Separated
 ---
 

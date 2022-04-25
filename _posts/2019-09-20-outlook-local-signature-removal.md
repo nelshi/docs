@@ -2,7 +2,7 @@
 layout: post
 title: "Outlook Local Signature Removal"
 date: 2019-09-20 09:00:00 +0000
-categories: rmm script #Space Separated
+categories: script #Space Separated
 tags: rmm script outlook powershell signature #Space Separated
 ---
 
