@@ -90,11 +90,11 @@ Set as a target as normal.
     - 192.168.0.1:8003
 ```
 
-# Docker and Docker Compose
+# Dockerfile and Script
 
 `dockerfile`
 
-```dockerfile dockerfile
+```
 FROM python:3-slim
 
 RUN set -eux; \
@@ -135,7 +135,10 @@ EXPOSE 8001
 ENTRYPOINT ["python3"]
 CMD ["vigor-to-prom.py"]
 ```
-```py vigor-to-prom.py
+
+`vigor-to-prom.py`
+
+```
 #!/usr/bin/python3
 
 #
