@@ -5,6 +5,11 @@ date: 2019-07-20 09:00:00 +0000
 categories: edgerouter #Space Separated
 tags: edgerouter modem masquerade #Space Separated
 ---
+
+# Psuedo-Ethernet WAN GUI Access
+
+Allows access to modem GUI over LAN Port
+
 ```sh
 configure
 set interfaces pseudo-ethernet peth0 link eth0

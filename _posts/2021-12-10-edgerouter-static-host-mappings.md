@@ -5,6 +5,7 @@ date: 2021-12-10 09:00:00 +0000
 categories: edgerouter #Space Separated
 tags: edgerouter dns static hostname #Space Separated
 ---
+
 # Static Host Mappings on EdgeRouter-X
 
 ```sh

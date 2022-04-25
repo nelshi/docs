@@ -5,6 +5,7 @@ date: 2022-02-15 09:00:00 +0000
 categories: edgerouter #Space Separated
 tags: edgerouter iot segregation vlan #Space Separated
 ---
+
 # EdgeRouter-Home-Network (Guest & IoT Isolation)
 EdgeRouter CLI Commands For A Segregated Home Network
 
@@ -12,7 +13,6 @@ EdgeRouter CLI Commands For A Segregated Home Network
 ```sh
 configure
 ```
-
 
 ## Create VLAN's for the Network
 ```sh

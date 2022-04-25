@@ -5,6 +5,9 @@ date: 2020-10-13 09:00:00 +0000
 categories: edgerouter #Space Separated
 tags: edgerouter upnp2 upnp open nat #Space Separated
 ---
+
+# Edgerouter UPnP2 Configuration
+
 ## Delete Existing UPnP
 
 ```sh

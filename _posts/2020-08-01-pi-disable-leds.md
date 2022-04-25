@@ -5,8 +5,10 @@ date: 2020-08-01 09:00:00 +0000
 categories: pi #Space Separated
 tags: pi led ethernet #Space Separated
 ---
+
 # Disable LEDs on Raspberry Pi
 
+## Edit the Boot Config
 ```sh
 sudo nano /boot/config.txt
 ```

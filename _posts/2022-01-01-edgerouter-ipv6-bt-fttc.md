@@ -1,11 +1,15 @@
 ---
 layout: post
-title: "Enable IPv6 on PPPoE"
+title: "Edgerouter IPv6 over PPPoE"
 date: 2022-01-01 09:00:00 +0000
 categories: edgerouter
 tags: router ipv6 edgerouter bt pppoe
 ---
-# Enable IPv6 on PPPoE
+
+# Edgerouter IPv6 over PPPoE
+
+## Enable IPv6 on PPPoE
+
 ```sh
 set interfaces ethernet eth0 pppoe 0 ipv6 enable
 set interfaces ethernet eth0 pppoe 0 ipv6 address autoconf

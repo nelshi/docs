@@ -10,8 +10,6 @@ tags: docker unifi uisp edgerouter #Space Separated
 
 This is an all-in-one Docker image for running the [Ubiquiti Network Management System](https://uisp.ui.com/). This image contains all the components required to run [UISP](https://uisp.ui.com/) in a single container and uses the [s6-overlay](https://github.com/just-containers/s6-overlay) for process management.
 
-This image will run on most platforms that support Docker including [Docker for Mac](https://www.docker.com/docker-mac), [Docker for Windows](https://www.docker.com/docker-windows), Synology DSM and Raspberry Pi boards.
-
 ## Usage
 
 ```shell
@@ -20,7 +18,7 @@ docker run \
   -p 443:443 \
   -p 2055:2055/udp \
   -e TZ=<timezone> \
-  -v </path/to/config>:/config \
+  -v /home/docker/uisp:/config \
   nico640/docker-unms:latest
 ```
 
@@ -29,7 +27,7 @@ docker run \
 This image will also allow you to run [UISP](https://uisp.ui.com/) on a Raspberry Pi or other Docker-enabled ARMv7/8 devices.
 
 ```
-docker run -d --name unms -p 80:80 -p 443:443 -p 2055:2055/udp -v </path/to/config>:/config nico640/docker-unms:latest
+docker run -d --name uisp -p 80:80 -p 443:443 -p 2055:2055/udp -v /home/docker/uisp:/config nico640/docker-unms:latest
 ```
 
 ## Parameters
@@ -40,7 +38,7 @@ The parameters are split into two halves, separated by a colon, the left hand si
 * `-p 80:80` - Expose the HTTP web server port on the docker host
 * `-p 443:443` - Expose the HTTPS and WSS web server port on the docker host
 * `-p 2055:2055/udp` - Expose the Netflow port on the docker host
-* `-e TZ` - for [timezone information](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e.g. `-e TZ=Europe/London`
+* `-e TZ=Europe/London` - for [timezone information](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
 
 *Optional Settings:*
 
@@ -54,12 +52,10 @@ The parameters are split into two halves, separated by a colon, the left hand si
 
 ## Limitations
 
-The Docker image, nico640/docker-unms, is not maintained by or affiliated with Ubiquiti Networks. You should not expect any support from Ubiquiti when running UISP (formerly UNMS) using this image.
-
 * In-app upgrades will not work. You can upgrade UISP by downloading the latest version of this image.
 
 ## Docker Compose
 
 ```yml
-{% include /uisp/docker-compose.yml %}
+{% include /docker-compose/docker-compose-uisp.yml %}
 ```
