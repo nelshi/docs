@@ -13,4 +13,8 @@ layout: page
   <a href="{{ file.path }}">{{ file.basename }}</a>
 {% endfor %}
 
+{% for file in site.data %}
+  <a href="{{ file.path }}">{{ file.basename }}</a>
+{% endfor %}
+
 </div>

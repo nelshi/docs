@@ -2,8 +2,8 @@
 layout: post
 title: "365 Domain Removal and Revert"
 date: 2021-01-22 09:00:00 +0000
-categories: '365' #Space Separated
-tags: '365' script domain #Space Separated
+categories: Office365 #Space Separated
+tags: script domain 365 #Space Separated
 ---
 
 # 365 Domain Removal and Revert
