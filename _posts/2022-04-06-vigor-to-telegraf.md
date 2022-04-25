@@ -33,6 +33,8 @@ apt-get upgrade -y && apt-get install -y python3 python3-pip
 
 5b. Restart telegraf
 
+## Script
+
 `vigor-stats.py`
 
 ```py
