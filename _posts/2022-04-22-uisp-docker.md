@@ -60,4 +60,6 @@ The Docker image, nico640/docker-unms, is not maintained by or affiliated with U
 
 ## Docker Compose
 
+```yml
 {% include /uisp/docker-compose.yml %}
+```
