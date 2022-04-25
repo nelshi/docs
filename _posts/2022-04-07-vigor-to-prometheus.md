@@ -94,7 +94,7 @@ Set as a target as normal.
 
 `dockerfile`
 
-```
+```dockerfile
 FROM python:3-slim
 
 RUN set -eux; \
@@ -138,7 +138,7 @@ CMD ["vigor-to-prom.py"]
 
 `vigor-to-prom.py`
 
-```
+```py
 #!/usr/bin/python3
 
 #
