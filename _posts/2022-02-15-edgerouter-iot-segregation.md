@@ -8,14 +8,14 @@ tags: edgerouter iot segregation vlan #Space Separated
 # EdgeRouter-Home-Network (Guest & IoT Isolation)
 EdgeRouter CLI Commands For A Segregated Home Network
 
-***Switch to Config mode***
-```
+## Configure Mode
+```sh
 configure
 ```
 
 
-***Create VLAN's for the Network***
-```
+## Create VLAN's for the Network
+```sh
 set interfaces ethernet eth0 description 'Internet (ISP)'
 set interfaces ethernet eth1 description 'Lan Network'
 set interfaces ethernet eth1 vif 10 address 10.10.10.1/24
@@ -27,8 +27,8 @@ set interfaces ethernet eth1 vif 30 description 'IoT Network''
 commit
 ```
 
-***Create DHCP Server for VLAN's***
-```
+## Create DHCP Server for VLAN's
+```sh
 set service dhcp-server disabled false
 set service dhcp-server shared-network-name Main-V10
 set service dhcp-server shared-network-name Main-V10 authoritative enable
@@ -54,10 +54,10 @@ set service dhcp-server shared-network-name IoT-V30 subnet 10.10.30.0/24 start 1
 commit
 ```
 
-***Set up FIREWALL for Guest & IOT VLAN's***
+## Set up FIREWALL for Guest & IOT VLAN's
 
 *Create Network Group*
-```
+```sh
 set firewall group network-group LAN_NETWORKS description 'Private Network Group'
 set firewall group network-group LAN_NETWORKS network 192.168.0.0/16
 set firewall group network-group LAN_NETWORKS network 172.16.0.0/12
@@ -65,7 +65,7 @@ set firewall group network-group LAN_NETWORKS network 10.0.0.0/8
 commit
 ```
 *Set up rules for GUEST VLAN*
-```
+```sh
 set firewall name GUEST_IN
 set firewall name GUEST_IN description 'Guest to Internet' 
 set firewall name GUEST_IN default-action accept
@@ -95,7 +95,7 @@ set firewall name GUEST_LOCAL rule 20 destination port 67
 commit
 ```
 *Set up rules for IOT VLAN*
-```
+```sh
 set firewall name IoT_IN
 set firewall name IoT_IN description 'IoT to Internet' 
 set firewall name IoT_IN default-action accept
@@ -124,8 +124,8 @@ set firewall name IoT_LOCAL rule 20 protocol udp
 set firewall name IoT_LOCAL rule 20 destination port 67
 commit
 ```
-*Assign the VLAN interfaces*
-```
+## Assign the VLAN interfaces
+```sh
 set interfaces ethernet eth1 vif 20 firewall in name GUEST_IN
 set interfaces ethernet eth1 vif 20 firewall local name GUEST_LOCAL
 
