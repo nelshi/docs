@@ -7,26 +7,34 @@ tags: pi led ethernet #Space Separated
 ---
 # Disable LEDs on Raspberry Pi
 
-```
+```sh
 sudo nano /boot/config.txt
 ```
-#### Turn off PWR LED
-```
+## Turn off PWR LED
+```sh
 dtparam=pwr_led_trigger=none
 dtparam=pwr_led_activelow=off
 ```
-#### Turn off ACT LED
-```
+## Turn off ACT LED
+```sh
 dtparam=act_led_trigger=none
 dtparam=act_led_activelow=off
 ```
-#### Turn off Ethernet ACT LED
-```
+## Turn off Ethernet ACT LED
+`Pi4`
+```sh
 dtparam=eth_led0=4
-dtparam=eth_led0=14 | Pi3B
 ```
-#### Turn off Ethernet LNK LED
+`Pi3B`
+```sh
+dtparam=eth_led0=14
 ```
+## Turn off Ethernet LNK LED
+`Pi4`
+```sh
 dtparam=eth_led1=4
-dtparam=eth_led1=14 | Pi3B
+```
+`Pi3B`
+```sh
+dtparam=eth_led1=14
 ```
