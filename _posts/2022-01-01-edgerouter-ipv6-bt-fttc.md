@@ -6,7 +6,7 @@ categories: edgerouter
 tags: router ipv6 edgerouter bt pppoe
 ---
 # Enable IPv6 on PPPoE
-```
+```sh
 set interfaces ethernet eth0 pppoe 0 ipv6 enable
 set interfaces ethernet eth0 pppoe 0 ipv6 address autoconf
 set interfaces ethernet eth0 pppoe 0 ipv6 dup-addr-detect-transmits 1
@@ -14,14 +14,14 @@ set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 0 prefix-length /56
 set interfaces ethernet eth0 pppoe 0 dhcpv6-pd rapid-commit enable
 set interfaces ethernet eth0 pppoe 0 dhcpv6-pd prefix-only
 ```
-# Firewall Rules for IPv6
+## Firewall Rules for IPv6
 Only allow:
 Established Connections
 Related Connections
 ICMPv6 (Ping)
 DHCPv6 (ISP Address Assignment)
 
-```
+```sh
 set firewall ipv6-name WANv6_LOCAL default-action drop
 set firewall ipv6-name WANv6_LOCAL description 'Local network traffic'
 set firewall ipv6-name WANv6_LOCAL enable-default-log
@@ -63,17 +63,17 @@ set interfaces ethernet eth0 pppoe 0 firewall in name WAN_IN
 set interfaces ethernet eth0 pppoe 0 firewall local ipv6-name WANv6_LOCAL
 set interfaces ethernet eth0 pppoe 0 firewall local name WAN_LOCAL
 ```
-# IPv6 SLAAC
+## IPv6 SLAAC
 Enable IPv6 Stateless Address Auto Configuration on LAN (Switch0)
 
-```
+```sh
 set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 0 interface switch0 host-address '::1'
 set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 0 interface switch0 prefix-id '::1'
 set interfaces ethernet eth0 pppoe 0 dhcpv6-pd pd 0 interface switch0 service slaac
 ```
-# Enable IPv6 on LAN (Switch0)
+## Enable IPv6 on LAN (Switch0)
 
-```
+```sh
 set interfaces switch switch0 ipv6 dup-addr-detect-transmits 1
 set interfaces switch switch0 ipv6 router-advert cur-hop-limit 64
 set interfaces switch switch0 ipv6 router-advert link-mtu 0
