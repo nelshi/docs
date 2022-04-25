@@ -7,7 +7,7 @@ tags: edgerouter upnp2 upnp open nat #Space Separated
 ---
 ## Delete Existing UPnP
 
-```
+```sh
 configure
 delete service upnp
 commit
@@ -17,7 +17,7 @@ exit
 
 ## Enable UPnP2 for LAN (switch0)
 
-```
+```sh
 configure
 set service upnp2 listen-on switch0
 set service upnp2 wan pppoe0
@@ -30,7 +30,7 @@ exit
 
 ## Open NAT Xbox
 
-```
+```sh
 configure
 set service upnp2 acl rule 10 action deny
 set service upnp2 acl rule 10 external-port 3074
