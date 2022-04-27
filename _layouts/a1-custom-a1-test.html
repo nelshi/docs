@@ -1,0 +1,17 @@
+---
+layout: page
+# Testing
+---
+
+<div class="post-content">
+  {{ content }}
+  <ul>
+  {% for file in site.static_files %}
+    {% if file.path contains '_includes/docker-compose' %}
+      <li>
+        <a href="{{ file.path }}">{{ file.basename }}</a><a href="{{ file.path }}" download="docker-compose.yml" target="_blank" class="btn btn-info" >Download</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+  </ul>
+</div>
