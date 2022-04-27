@@ -8,7 +8,7 @@ layout: page
   {% for file in site.static_files %}
     {% if file.path contains '_includes/powershell' %}
       <br>
-      <a href="{{ file.path }}">{{ file.basename }}</a><a style = "position: absolute; right: 10%;" href="{{ file.path }}" download="docker-compose.yml" target="_blank" class="btn btn-info" >Download</a>
+      <a href="{{ file.path }}">{{ file.basename }}</a><a style = "position: absolute; right: 10%;" href="{{ file.path }}" download="{{ file.basename }}.ps1" target="_blank" class="btn btn-info" >Download</a>
       </br>
     {% endif %}
   {% endfor %}
