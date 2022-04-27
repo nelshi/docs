@@ -1,0 +1,18 @@
+---
+layout: page
+# Repo of Python PY files
+---
+
+<div class="post-content">
+
+<ul>
+{% for file in site.static_files %}
+  {% if file.path contains '_includes/python' %}
+    <li>
+      <a href="{{ file.path }}">{{ file.basename }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+</div>

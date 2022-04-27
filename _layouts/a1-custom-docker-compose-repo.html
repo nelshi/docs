@@ -9,7 +9,7 @@ layout: page
 {% for file in site.static_files %}
   {% if file.path contains '_includes/docker-compose' %}
     <li>
-      <a href="{{ file.path }}">{{ file.basename | remove 'docker-compose-'}}</a>
+      <a href="{{ file.path }}">{{ file.basename }}</a>
     </li>
   {% endif %}
 {% endfor %}
