@@ -1,71 +1,17 @@
 ---
-layout: compress
+layout: page
 # Repo of Docker-Compose YML files
 ---
 
-<!DOCTYPE html>
-
-{% include lang.html %}
-
-{% include assets-origin.html %}
-
-{% capture prefer_mode %}
-  {% if site.theme_mode %}
-    data-mode="{{ site.theme_mode }}"
-  {% endif %}
-{% endcapture %}
-
-<html lang="{{ site.lang }}"{{ prefer_mode }}>
-
-  {% include head.html %}
-
-  <body data-spy="scroll" data-target="#toc" data-topbar-visible="true">
-
-    {% include sidebar.html %}
-
-    {% include topbar.html %}
-
-    <div id="main-wrapper">
-      <div id="main">
-
-        {{ content }}
-
-        <div class="post-content">
-
-          <ul>
-          {% for file in site.static_files %}
-            {% if file.path contains '_includes/docker-compose' %}
-              <li>
-                <a href="{{ file.path }}">{{ file.basename }}</a>
-              </li>
-            {% endif %}
-          {% endfor %}
-          </ul>
-          
-          </div>
-
-        {% include footer.html %}
-
-      </div>
-
-      {% include search-results.html %}
-
-    </div> <!-- #main-wrapper -->
-
-    {% if page.mermaid %}
-      {% include mermaid.html %}
+<div class="post-content">
+  {{ content }}
+  <ul>
+  {% for file in site.static_files %}
+    {% if file.path contains '_includes/docker-compose' %}
+      <li>
+        <a href="{{ file.path }}">{{ file.basename }}</a>
+      </li>
     {% endif %}
-
-    <div id="mask"></div>
-
-    <a id="back-to-top" href="#" aria-label="back-to-top" class="btn btn-lg btn-box-shadow" role="button">
-      <i class="fas fa-angle-up"></i>
-    </a>
-
-    {% include search-loader.html %}
-
-    {% include js-selector.html %}
-
-  </body>
-
-</html>
+  {% endfor %}
+  </ul>
+</div>

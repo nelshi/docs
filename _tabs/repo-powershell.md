@@ -1,7 +1,7 @@
 ---
 layout: a1-custom-powershell-repo
 title: Powershell Repo
-icon: fa-light fa-rectangle-terminal
+icon: fa-thin fa-rectangle-terminal
 order: 6
 ---
 
