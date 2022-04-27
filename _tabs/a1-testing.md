@@ -1,18 +1,18 @@
 ---
-layout: a1-custom-a1-test
+#layout: a1-custom-a1-test
 title: Testing
 icon: fa-solid fa-vial
 order: 8
 ---
 
-> Collection of Docker-Compose.yml Scripts.
+> Prompt-Tip
 {: .prompt-tip }
 
-> Click the download button to download the respective Docker-Compose.yml, or click the filename to view the RAW YAML data.
+> Prompt-Info
 {: .prompt-info }
 
-> Collection of Docker-Compose.yml Scripts.
+> Prompt-Warning
 {: .prompt-warning }
 
-> Click the download button to download the respective Docker-Compose.yml, or click the filename to view the RAW YAML data.
+> Promt-Danger
 {: .prompt-danger }
