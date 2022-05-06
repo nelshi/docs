@@ -1,0 +1,8 @@
+#rootshare
+[rootshare]
+path = /mnt/user
+comment =
+browseable = yes
+valid users = nels #read access
+write list = nels #write access
+vfs objects =
