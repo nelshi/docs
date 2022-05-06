@@ -8,9 +8,14 @@ tags: unraid rootshare share smb #Space Separated
 
 # unRAID Root Share
 
-Enable a rootshare on unRAID to allow local moving of files between shares via another SMB client.
+Enable a rootshare on unRAID to allow local moving of files between shares via another SMB client.  
+Append the below to the existing configuration, replacing users as required.
 
-`SMB Extras`
+- Settings
+    - Network Services/SMB
+        - SMB Extras
+
+`Samba Extra Configuration`
 
 ```
 {% include /misc-scripts/unraid-smb-extras.txt %}
