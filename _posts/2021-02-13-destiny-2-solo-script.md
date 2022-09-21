@@ -19,5 +19,5 @@ Run the script within Powershell/Windows Terminal to enable, and hit `Enter` to 
 `destiny-2-solo.ps1` <a style = "position: relative; left: 5%;" href="https://docs.nels.one/_includes_/powershell/destiny-2-solo.ps1" download="destiny-2-solo.ps1" target="_blank" class="btn btn-info" >Download</a>
 
 ```ps
-{% include /powershell/destiny-2-solo.ps1 %}
+{% include /assets/powershell/destiny-2-solo.ps1 %}
 ```
