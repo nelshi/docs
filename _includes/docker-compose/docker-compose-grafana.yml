@@ -1,0 +1,20 @@
+version: "3"
+services:
+  grafana:
+    container_name: grafana
+    entrypoint:
+      - /run.sh
+    hostname: grafana
+    image: grafana/grafana-enterprise:latest
+    ipc: private
+    logging:
+      driver: json-file
+      options: {}
+    ports:
+      - 3000:3000/tcp
+    restart: unless-stopped
+    user: grafana
+    volumes:
+      - /home/docker/grafana/grafana.ini:/etc/grafana/grafana.ini
+      - /home/docker/grafana:/var/lib/grafana
+    working_dir: /usr/share/grafana

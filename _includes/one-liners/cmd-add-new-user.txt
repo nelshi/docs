@@ -1,0 +1,3 @@
+net user username "PASSWORD" /add
+
+net user username "PASSWORD" /add /expires:never

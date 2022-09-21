@@ -1,0 +1,13 @@
+version: "3"
+services:
+  organizr:
+    container_name: organizr
+    entrypoint:
+      - /init
+    hostname: organizr
+    image: organizr/organizr:latest
+    ports:
+      - 8001:80/tcp
+    restart: unless-stopped
+    volumes:
+      - /home/docker/organizr:/config
