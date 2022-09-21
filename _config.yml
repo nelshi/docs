@@ -19,7 +19,7 @@ prefer_datetime_locale:
 timezone: Europe/London
 
 # Include the _includes folder to allow referencing files
-include:
+#include:
 #  - _includes
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
