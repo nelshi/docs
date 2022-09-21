@@ -1,9 +1,9 @@
 ---
 layout: post
-title: ""
-date: 2022-01-01 09:00:00 +0000
-categories: #Space Separated
-tags: #Space Separated
+title: "Install Duplicati as Windows Service"
+date: 2022-09-15 09:00:00 +0000
+categories: windows #Space Separated
+tags: windows duplicati service backup #Space Separated
 ---
 
 # Install Duplicati as Windows Service
@@ -17,7 +17,7 @@ During install don’t mark Auto Start up option
 Open CMD as admin
 
 Navigate to the installation folder in CMD (this should be the same as long as you left it as default)
-```bash
+```sh
 cd "C:\Program Files\Duplicati 2\"
 ```
 

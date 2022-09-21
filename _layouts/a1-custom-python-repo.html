@@ -6,7 +6,7 @@ layout: page
 <div class="post-content">
   {{ content }}
   {% for file in site.static_files %}
-    {% if file.path contains '_includes/python' %}
+    {% if file.path contains 'assets/python' %}
       <br>
       <a href="{{ file.path }}">{{ file.basename }}</a><a style = "position: absolute; right: 10%;" href="{{ file.path }}" download="{{ file.basename }}.py" target="_blank" class="btn btn-info" >Download</a>
       </br>
