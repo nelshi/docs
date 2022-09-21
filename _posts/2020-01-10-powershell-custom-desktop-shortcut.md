@@ -13,5 +13,5 @@ Script to create a custom shortcut on the Desktop of client machines.
 `custom-shortcut.ps1`
 
 ```ps
-{% include /powershell/custom-shortcut.ps1 %}
+{% include /assets/powershell/custom-shortcut.ps1 %}
 ```

@@ -18,5 +18,5 @@ Append the below to the existing configuration, replacing users as required.
 `Samba Extra Configuration`
 
 ```
-{% include /misc-scripts/unraid-smb-extras.txt %}
+{% include /assets/misc-scripts/unraid-smb-extras.txt %}
 ```

@@ -13,5 +13,5 @@ Script to automatically create an inbound firewall rule for a specified applicat
 `softphone-firewall.ps1`
 
 ```ps
-{% include /powershell/softphone-firewall.ps1 %}
+{% include /assets/powershell/softphone-firewall.ps1 %}
 ```

@@ -13,5 +13,5 @@ Script to replace existing Hostfile entries with the below specified addresses i
 `hostfile-replace.ps1`
 
 ```ps
-{% include /powershell/hostfile-replace.ps1 %}
+{% include /assets/powershell/hostfile-replace.ps1 %}
 ```

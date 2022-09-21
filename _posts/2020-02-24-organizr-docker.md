@@ -11,5 +11,5 @@ tags: docker organizr homelab tabs #Space Separated
 `docker-compose.yml`
 
 ```yml
-{% include /docker-compose/docker-compose-organizr.yml %}
+{% include /assets/docker-compose/docker-compose-organizr.yml %}
 ```

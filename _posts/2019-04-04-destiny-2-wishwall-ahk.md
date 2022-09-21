@@ -26,5 +26,5 @@ tags: #Space Separated
 `destiny-2-wishwall-f3.ahk`
 
 ```yml
-{% include /misc-scripts/destiny-2-wishwall-f3.ahk %}
+{% include /assets/misc-scripts/destiny-2-wishwall-f3.ahk %}
 ```

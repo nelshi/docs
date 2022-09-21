@@ -41,5 +41,5 @@ apt-get upgrade -y && apt-get install -y python3 python3-pip
 `vigor-to-telegraf.py`
 
 ```py
-{% include /python/vigor-to-telegraf.py %}
+{% include /assets/python/vigor-to-telegraf.py %}
 ```

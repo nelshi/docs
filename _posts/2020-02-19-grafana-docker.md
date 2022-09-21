@@ -11,5 +11,5 @@ tags: docker grafana #Space Separated
 `docker-compose.yml`
 
 ```yml
-{% include /docker-compose/docker-compose-grafana.yml %}
+{% include /assets/docker-compose/docker-compose-grafana.yml %}
 ```

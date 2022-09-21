@@ -15,5 +15,5 @@ Script to be pushed out via Group Policy to delete any existing signature within
 `signature-removal.ps1`
 
 ```ps
-{% include /powershell/signature-removal.ps1 %}
+{% include /assets/powershell/signature-removal.ps1 %}
 ```

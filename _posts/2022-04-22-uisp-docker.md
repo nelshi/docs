@@ -57,5 +57,5 @@ The parameters are split into two halves, separated by a colon, the left hand si
 ## Docker Compose
 
 ```yml
-{% include /docker-compose/docker-compose-uisp.yml %}
+{% include /assets/docker-compose/docker-compose-uisp.yml %}
 ```

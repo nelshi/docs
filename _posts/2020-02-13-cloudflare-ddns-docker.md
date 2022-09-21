@@ -71,5 +71,5 @@ If you're wanting to set IPv6 records set the envrionment variable `RRTYPE=AAAA`
 `docker-compose.yml`
 
 ```yml
-{% include /docker-compose/docker-compose-cloudflare.yml %}
+{% include /assets/docker-compose/docker-compose-cloudflare.yml %}
 ```
